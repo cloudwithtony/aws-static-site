@@ -3,7 +3,8 @@
 This is a **fully serverless static website** hosted on **Amazon Web Services**, built to showcase my cloud skills and AWS learning journey.
 
 ## 🚀 Live Site
-➡️ [https://d2ogr6k8pmoty.cloudfront.net](https://d2ogr6k8pmoty.cloudfront.net)
+🌐 [Live Project Site (AWS CloudFront)](https://d2ogr6k8pmoty.cloudfront.net)
+
 
 ## 🛠️ Technologies Used
 - **Amazon S3** – Object storage for hosting `index.html`
