@@ -1,98 +1,91 @@
-/* Reset and base styles */
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212;
-  color: #f0f0f0;
-  display: flex;
-  justify-content: center;
+  color: #f1f1f1;
+  line-height: 1.6;
 }
 
-/* Container styling */
-main {
-  max-width: 850px;
-  width: 100%;
-  padding: 2rem;
-  box-sizing: border-box;
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-/* Header styles */
 header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
 }
 
 header h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.3rem;
+  color: #4FC3F7;
+  margin-bottom: 0.5rem;
 }
 
 header p {
   font-size: 1.1rem;
-  color: #bbbbbb;
+  color: #ccc;
 }
 
-/* Section headers */
+.section {
+  margin-bottom: 40px;
+}
+
 h2 {
-  color: #90cdf4;
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.4rem;
-  margin-top: 2rem;
+  border-bottom: 2px solid #4FC3F7;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  color: #4FC3F7;
 }
 
-/* Skills section */
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.8rem;
+  gap: 10px;
 }
 
 .skills span {
   background-color: #1e1e1e;
-  padding: 0.4rem 0.8rem;
-  border-radius: 5px;
-  color: #90cdf4;
-  font-weight: 600;
-}
-
-/* Project cards */
-.project-card {
-  background-color: #1c1c1c;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-top: 1rem;
-  box-shadow: 0 0 5px #000;
-}
-
-.project-card a {
-  color: #90cdf4;
-  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #4FC3F7;
+  color: #4FC3F7;
   font-weight: bold;
-  margin-right: 0.5rem;
+  transition: background 0.3s ease;
 }
 
-/* Tools icons section */
-.tools {
-  display: flex;
-  gap: 1rem;
-  font-size: 2rem;
-  margin-top: 1rem;
+.skills span:hover {
+  background-color: #4FC3F7;
+  color: #121212;
 }
 
-/* Bullet list */
-section ul {
-  list-style-type: '📌 ';
-  padding-left: 1.2rem;
+.project h3 {
+  margin-bottom: 8px;
+  color: #fff;
 }
 
-/* Link styling */
-a {
-  color: #90cdf4;
+.project ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project li {
+  margin-bottom: 8px;
+}
+
+.project a {
+  color: #4FC3F7;
   text-decoration: none;
 }
 
-a:hover {
+.project a:hover {
   text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 60px;
 }
