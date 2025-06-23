@@ -1,43 +1,47 @@
+/* Global styles */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #121212;
-  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
   margin: 0;
-  padding: 2rem;
+  padding: 0;
 }
 
 header {
   text-align: center;
-  margin-bottom: 3rem;
+  padding: 30px 10px;
+  background-color: #111;
 }
 
 h1 {
-  color: #4fc3f7;
-  margin-bottom: 0.5rem;
-}
-
-section {
-  margin-bottom: 2rem;
-  border-top: 1px solid #4fc3f7;
-  padding-top: 1rem;
+  color: #00bfff;
+  margin-bottom: 10px;
 }
 
 h2 {
-  color: #ffffff;
+  border-bottom: 2px solid #00bfff;
+  padding-bottom: 5px;
+  margin-top: 40px;
 }
 
+section {
+  padding: 20px;
+}
+
+/* Skills pills */
 .skills span {
   display: inline-block;
-  background-color: #03a9f4;
+  background-color: #00bfff;
   color: #000;
-  padding: 0.5rem 1rem;
-  margin: 0.3rem;
-  border-radius: 0.5rem;
-  font-weight: bold;
+  padding: 8px 12px;
+  margin: 6px 6px 6px 0;
+  border-radius: 6px;
+  font-weight: 600;
 }
 
+/* Links */
 a {
-  color: #4fc3f7;
+  color: #00bfff;
   text-decoration: none;
 }
 
