@@ -1,35 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Projects</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Anthon Sonnier</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .project-card {
+      background-color: #1e293b;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 300px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #38bdf8;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .project-links a {
+      color: #93c5fd;
+      text-decoration: none;
+      margin-right: 1rem;
+      font-weight: bold;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111827;
+      border-top: 1px solid #334155;
+    }
+
+    .contact h2 {
+      color: #38bdf8;
+    }
+
+    .contact a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Anthon Sonnier's Projects</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="projects.html">Projects</a>
-    </nav>
+    <h1>My Projects</h1>
+    <p>Each project is a milestone in my cloud journey</p>
   </header>
 
-  <main>
-    <section class="project">
-      <h2>🌐 AWS Static Site</h2>
-      <p>My first cloud project using S3, CloudFront, GitHub Actions, and IAM.</p>
-      <a href="https://d2ogr6k8pmoty.cloudfront.net" target="_blank">Visit Site</a>
-    </section>
+  <section class="projects">
+    <div class="project-card">
+      <h3>AWS Static Website</h3>
+      <p>Deployed a live static website using Amazon S3, CloudFront, and GitHub Actions. Managed permissions with IAM and learned version control through Git.</p>
+      <div class="project-links">
+        <a href="https://d2ogr6k8pmoty.cloudfront.net/index.html" target="_blank">Live Site</a>
+        <a href="https://github.com/cloudwithtony/aws-static-site" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <!-- Add more cards here for future projects -->
+  </section>
 
-    <!-- Add more projects below -->
-    <section class="project">
-      <h2>🧠 Coming Soon: Lambda + DynamoDB</h2>
-      <p>Dynamic data + backend logic using AWS serverless stack.</p>
-    </section>
-  </main>
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:anthon.sonnier@gmail.com">anthon.sonnier@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/anthonsonnier-devops/" target="_blank">Anthon Sonnier</a></p>
+  </section>
 
   <footer>
-    <p>© 2025 Anthon Sonnier</p>
+    <p>&copy; 2025 Anthon Sonnier. Built with 💡 and AWS.</p>
   </footer>
 </body>
 </html>
